@@ -1,0 +1,37 @@
+/* Modo Claro (padrão) */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Escuro */
+body.modo-escuro {
+    background-color: #333;
+    color: white;
+}
+
+body.modo-escuro input[type="text"], body.modo-escuro button {
+    background-color: #555;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Transições suaves para os elementos */
+input[type="text"], button, ul {
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
